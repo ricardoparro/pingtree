@@ -1,0 +1,12 @@
+C:\eprospects\EpPingtree\trunk\EpPingtree.Datalayer\EpPingtree.Model\bin\Debug\EpPingtree.Model.dll.config
+C:\eprospects\EpPingtree\trunk\EpPingtree.Datalayer\EpPingtree.Model\bin\Debug\EpPingtree.Model.dll
+C:\eprospects\EpPingtree\trunk\EpPingtree.Datalayer\EpPingtree.Model\bin\Debug\EpPingtree.Model.pdb
+C:\eprospects\EpPingtree\trunk\EpPingtree.Datalayer\EpPingtree.Model\obj\Debug\ResolveAssemblyReference.cache
+C:\eprospects\EpPingtree\trunk\EpPingtree.Datalayer\EpPingtree.Model\obj\Debug\EpPingtree.Model.dll
+C:\eprospects\EpPingtree\trunk\EpPingtree.Datalayer\EpPingtree.Model\obj\Debug\EpPingtree.Model.pdb
+C:\eprospects\EpPingtree\trunk\EpPingtree.Model\bin\Debug\EpPingtree.Model.dll.config
+C:\eprospects\EpPingtree\trunk\EpPingtree.Model\bin\Debug\EpPingtree.Model.dll
+C:\eprospects\EpPingtree\trunk\EpPingtree.Model\bin\Debug\EpPingtree.Model.pdb
+C:\eprospects\EpPingtree\trunk\EpPingtree.Model\obj\Debug\ResolveAssemblyReference.cache
+C:\eprospects\EpPingtree\trunk\EpPingtree.Model\obj\Debug\EpPingtree.Model.dll
+C:\eprospects\EpPingtree\trunk\EpPingtree.Model\obj\Debug\EpPingtree.Model.pdb

@@ -1,0 +1,537 @@
+﻿
+@using EpPingtree.Model.ViewModel
+@model IframeFormModel
+<div id="page">
+    <div id="main">
+        <div class="top-part">
+            @{ Html.BeginForm("Index", "MainForm", FormMethod.Post, new { id = "application" }); }
+            <div data-valmsg-summary="true" class="validation-summary-valid">
+                <span>Please correct the errors shown below!</span>
+                <ul>
+                    <li style="display: none"></li>
+                </ul>
+            </div>
+            <fieldset>
+                <!-- top part in form-->
+                <div class="part-top">
+                    <!-- title-->
+                    <h3>
+                        <cufon class="cufon cufon-canvas" alt="Loan " style="width: 46px; height: 19px;"><canvas width="62" height="19" style="width: 62px; height: 19px; top: 0px; left: -1px;"></canvas><cufontext>Loan </cufontext></cufon>
+                        <cufon class="cufon cufon-canvas" alt="Required" style="width: 78px; height: 19px;"><canvas width="86" height="19" style="width: 86px; height: 19px; top: 0px; left: -1px;"></canvas><cufontext>Required</cufontext></cufon>
+                    </h3>
+                    <!-- list-->
+                    <ul class="top-list">
+                        <li>
+                            <label for="field" class="txt">
+                                Amount of Cash</label>
+                            <select name="Model.LoanAmount" id="SelectedCashAmount" data-val-required=" " data-val-range-min="100"
+                                data-val-range-max="1000" data-val-range=" " data-val-number="The field SelectedCashAmount must be a number."
+                                data-val="true" class="valid">
+                                <option value="100">£ 100</option>
+                                <option value="150">£ 150</option>
+                                <option value="200">£ 200</option>
+                                <option value="250">£ 250</option>
+                                <option value="300">£ 300</option>
+                                <option value="350">£ 350</option>
+                                <option value="400">£ 400</option>
+                                <option value="450">£ 400</option>
+                                <option value="500">£ 500</option>
+                                <option value="550">£ 550</option>
+                                <option value="600">£ 600</option>
+                                <option value="650">£ 650</option>
+                                <option value="700">£ 700</option>
+                                <option value="750">£ 750</option>
+                                <option value="800">£ 800</option>
+                                <option value="850">£ 850</option>
+                                <option value="900">£ 900</option>
+                                <option value="950">£ 950</option>
+                                <option value="1000">£ 1000</option>
+                            </select>
+                            <span data-valmsg-replace="true" data-valmsg-for="SelectedCashAmount" class="field-validation-valid">
+                            </span></li>
+                    </ul>
+                </div>
+                <!-- bottopart of form-->
+                <div class="part-top">
+                    <!-- title-->
+                    <h3>
+                        <cufon class="cufon cufon-canvas" alt="About " style="width: 57px; height: 19px;"><canvas width="73" height="19" style="width: 73px; height: 19px; top: 0px; left: -1px;"></canvas><cufontext>About </cufontext></cufon>
+                        <cufon class="cufon cufon-canvas" alt="You" style="width: 32px; height: 19px;"><canvas width="41" height="19" style="width: 41px; height: 19px; top: 0px; left: -1px;"></canvas><cufontext>You</cufontext></cufon>
+                    </h3>
+                    <!-- list-->
+                    <ul class="bttm-list">
+                        <li class="middle-line">
+                            <div class="column">
+                                <!-- title-->
+                                <strong>Title</strong>
+                                <!-- background-->
+                               
+                                <div class="bg">
+                                    <select name="Model.Title" id="Title" class="select-title valid">
+                                        <option value="Mr">Mr</option>
+                                        <option value="Mrs">Mrs</option>
+                                        <option value="Miss">Miss</option>
+                                        <option value="Ms">Ms</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <label for="field2" class="txt">
+                                    First Name</label>
+                                <div class="bg">
+                                    <input type="text" value="" name="Model.FirstName" id="FirstName" data-val-required=" "
+                                        data-val="true" class="input">
+                                    <span data-valmsg-replace="true" data-valmsg-for="FirstName" class="field-validation-valid">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <label for="field3" class="txt">
+                                    Last Name</label>
+                                <div class="bg">
+                                    <input type="text" value="" name="Model.LastName" id="LastName" data-val-required=" " data-val="true"
+                                        class="input">
+                                    <span data-valmsg-replace="true" data-valmsg-for="LastName" class="field-validation-valid">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="column last">
+                                <label for="field4" class="txt">
+                                    Date of Birth</label>
+                                <select name="Model.DobDay" id="DobDay" data-val-required=" " data-val-range-min="1" data-val-range-max="31"
+                                    data-val-range=" " data-val="true" class="select-title input-validation-error">
+                                    <option value="0">dd</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <span data-valmsg-replace="true" data-valmsg-for="DobDay" class="field-validation-error">
+                                    <span htmlfor="DobDay" generated="true" class=""></span></span>
+                                <select name="Model.DobMonth" id="DobMonth" data-val-required=" " data-val-range-min="1"
+                                    data-val-range-max="12" data-val-range=" " data-val="true" class="select-title">
+                                    <option value="0">mmm</option>
+                                    <option value="1">Jan</option>
+                                    <option value="2">Feb</option>
+                                    <option value="3">Mar</option>
+                                    <option value="4">Apr</option>
+                                    <option value="5">May</option>
+                                    <option value="6">Jun</option>
+                                    <option value="7">Jul</option>
+                                    <option value="8">Aug</option>
+                                    <option value="9">Sep</option>
+                                    <option value="10">Oct</option>
+                                    <option value="11">Nov</option>
+                                    <option value="12">Dec</option>
+                                </select>
+                                <select name="Model.DobYear" id="DobYear" class="select-title">
+                                    <option value="0">yyyy</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1979">1979</option>
+                                    <option value="1978">1978</option>
+                                    <option value="1977">1977</option>
+                                    <option value="1976">1976</option>
+                                    <option value="1975">1975</option>
+                                    <option value="1974">1974</option>
+                                    <option value="1973">1973</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1970">1970</option>
+                                    <option value="1969">1969</option>
+                                    <option value="1968">1968</option>
+                                    <option value="1967">1967</option>
+                                    <option value="1966">1966</option>
+                                    <option value="1965">1965</option>
+                                    <option value="1964">1964</option>
+                                    <option value="1963">1963</option>
+                                    <option value="1962">1962</option>
+                                    <option value="1961">1961</option>
+                                    <option value="1960">1960</option>
+                                    <option value="1959">1959</option>
+                                    <option value="1958">1958</option>
+                                    <option value="1957">1957</option>
+                                    <option value="1956">1956</option>
+                                    <option value="1955">1955</option>
+                                    <option value="1954">1954</option>
+                                    <option value="1953">1953</option>
+                                    <option value="1952">1952</option>
+                                    <option value="1951">1951</option>
+                                    <option value="1950">1950</option>
+                                    <option value="1949">1949</option>
+                                    <option value="1948">1948</option>
+                                    <option value="1947">1947</option>
+                                    <option value="1946">1946</option>
+                                    <option value="1945">1945</option>
+                                    <option value="1944">1944</option>
+                                    <option value="1943">1943</option>
+                                    <option value="1942">1942</option>
+                                    <option value="1941">1941</option>
+                                    <option value="1940">1940</option>
+                                    <option value="1939">1939</option>
+                                    <option value="1938">1938</option>
+                                    <option value="1937">1937</option>
+                                    <option value="1936">1936</option>
+                                    <option value="1935">1935</option>
+                                    <option value="1934">1934</option>
+                                    <option value="1933">1933</option>
+                                    <option value="1932">1932</option>
+                                    <option value="1931">1931</option>
+                                    <option value="1930">1930</option>
+                                    <option value="1929">1929</option>
+                                    <option value="1928">1928</option>
+                                    <option value="1927">1927</option>
+                                </select>
+                                
+                            </div>
+                        </li>
+                        <li class="middle-line">
+                            <div class="column">
+                                <label for="field5" class="txt">
+                                    Post Code</label>
+                                <input type="text" value="" name="Model.PostCode" id="postcode" class="input-post valid">
+                                
+                                <input type="button" class="mybutton" id="find">
+                            </div>
+                            <div class="column" id="addressdd" style="display: block;">
+                                <label for="field5" class="txt">
+                                    Select Address:</label>
+                                <select name="Model.Address1" id="return" class="valid">
+                                    <option value="0">Please Select...</option>
+                                    <option value="23904080.00">17 Bellefields Road SW9, London</option>
+                                    <option value="23904081.00">21 Bellefields Road SW9, London</option>
+                                    <option value="23904082.00">23 Bellefields Road SW9, London</option>
+                                    <option value="23904083.00">25 Bellefields Road SW9, London</option>
+                                    <option value="23904084.00">27 Bellefields Road SW9, London</option>
+                                    <option value="23904085.00">29 Bellefields Road SW9, London</option>
+                                    <option value="23904086.00">31 Bellefields Road SW9, London</option>
+                                    <option value="23904087.00">33 Bellefields Road SW9, London</option>
+                                    <option value="23904088.00">35 Bellefields Road SW9, London</option>
+                                    <option value="23904089.00">37 Bellefields Road SW9, London</option>
+                                    <option value="23904078.00">Penrose Housing Association, 39-43 Bellefields Road London
+                                        SW9</option>
+                                    <option value="50709486.00">45 Bellefields Road SW9, London</option>
+                                    <option value="51167251.00">Flat 1 47 Bellefields Road SW9, London</option>
+                                    <option value="50709497.00">Flat 2 47 Bellefields Road SW9, London</option>
+                                    <option value="50709498.00">Flat 3 47 Bellefields Road SW9, London</option>
+                                    <option value="50709499.00">Flat 4 47 Bellefields Road SW9, London</option>
+                                    <option value="50709500.00">Flat 5 47 Bellefields Road SW9, London</option>
+                                    <option value="50709501.00">Flat 6 47 Bellefields Road SW9, London</option>
+                                    <option value="50709502.00">Flat 7 47 Bellefields Road SW9, London</option>
+                                    <option value="50709503.00">Flat 8 47 Bellefields Road SW9, London</option>
+                                    <option value="50709504.00">Flat 9 47 Bellefields Road SW9, London</option>
+                                    <option value="50709505.00">Flat 10 47 Bellefields Road SW9, London</option>
+                                    <option value="50709506.00">Flat 11 47 Bellefields Road SW9, London</option>
+                                    <option value="50709507.00">Flat 12 47 Bellefields Road SW9, London</option>
+                                    <option value="51065289.00">Flat 14 47 Bellefields Road SW9, London</option>
+                                    <option value="50709508.00">Flat 15 47 Bellefields Road SW9, London</option>
+                                </select>
+                            </div>
+                            <div id="address" style="">
+                                <div class="column">
+                                    <label for="field5" class="txt">
+                                        House No:</label>
+                                    <input type="text" value="" name="Model.HouseNo" id="house" data-val-required=" " data-val="true"
+                                        class="input">
+                                </div>
+                                
+                                <div class="column">
+                                    <label for="field5" class="txt">
+                                        City:</label>
+                                    <input type="text" value="" name="Model.Town" id="town" data-val-required=" " data-val="true"
+                                        class="input">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="middle-line">
+                            <div class="column">
+                                <label for="field8" class="txt">
+                                    Email</label>
+                                <input type="text" value="" name="Model.Email" id="Email" class="input">
+                                <span data-valmsg-replace="true" data-valmsg-for="Email" class="field-validation-valid">
+                                </span>
+                            </div>
+                            <div class="column">
+                                <label for="field9" class="txt">
+                                    Home Phone</label>
+                                <input type="text" value="" name="Model.HomePhone" id="HomePhone" class="input">
+                               
+                            </div>
+                            <div class="column">
+                                <label for="field10" class="txt">
+                                    Work Phone</label>
+                                <input type="text" value="" name="Model.WorkPhone" id="WorkPhone" class="input">
+                                
+                            </div>
+                            <div class="column last">
+                                <label for="field10" class="txt">
+                                    Mobile Phone</label>
+                                <input type="text" value="" name="Model.MobilePhone" id="MobilePhone" />
+                               
+                            </div>
+                        </li>
+                        <li>
+                            <div class="column">
+                                <label for="field11" class="txt">
+                                    Time at Address</label>
+                                <select name="Model.MonthAtAddress" id="MonthAtAddress">
+                                    <option value="0" selected="selected">mm</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>
+                                <span data-valmsg-replace="true" data-valmsg-for="MonthAtAddress" class="field-validation-error">
+                                    <span htmlfor="MonthAtAddress" generated="true" class=""></span></span>
+                                <select name="YearAtAddress" id="YearAtAddress" data-val-required=" " data-val-range-min="0"
+                                    data-val-range-max="11" data-val-range=" " data-val-number="The field YearAtAddress must be a number."
+                                    data-val="true" class="select-titlealt input-validation-error">
+                                    <option value="12">yy</option>
+                                    <option value="0" selected="selected">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">10+</option>
+                                </select>
+                            </div>
+                            <div class="column">
+                                <label for="field11" class="txt">
+                                    Home Owner</label>
+                                <select name="Model.HomeOwner" id="HomeOwner" class="valid">
+                                    <option value="0" selected="selected">Please Select..</option>
+                                    <option value="CT">Council Tenant</option>
+                                    <option value="HO">HomeOwner</option>
+                                    <option value="LWP">LivingWithParents</option>
+                                    <option value="PT">Private Tenant</option>
+                                    <option value="OTHER">Others</option>
+                                </select>
+                           
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="part-top">
+                    <!-- title-->
+                    <h3>
+                        <cufon class="cufon cufon-canvas" alt="Your " style="width: 43px; height: 19px;"><canvas width="59" height="19" style="width: 59px; height: 19px; top: 0px; left: -1px;"></canvas><cufontext>Your </cufontext></cufon>
+                        <cufon class="cufon cufon-canvas" alt="Employment" style="width: 108px; height: 19px;"><canvas width="121" height="19" style="width: 121px; height: 19px; top: 0px; left: -1px;"></canvas><cufontext>Employment</cufontext></cufon>
+                    </h3>
+                    <!-- list-->
+                    <ul class="bttm-list">
+                        <li class="middle-line">
+                            <div class="column">
+                                <!-- title-->
+                                <label for="field4" class="txt">Employment Type</label>
+                                <select name="Model.EmploymentType" id="EmploymentType"  class="valid">
+                                    <option value="1">Employed F/T</option>
+                                    <option value="2">Employed P/T</option>
+                                    <option value="3">Self Employed</option>
+                                </select>
+                                <span data-valmsg-replace="true" data-valmsg-for="EmploymentType" class="field-validation-valid">
+                                </span>
+                            </div>
+                            <div class="column">
+                                <label for="field10" class="txt">
+                                    Employer Name</label>
+                                <input type="text" value="" name="Model.EmployerName" id="EmployerName" data-val-required=" "
+                                    data-val="true" class="input">
+                               
+                            </div>
+                            <div class="column">
+                                <label for="field4" class="txt">
+                                    Time with Employer</label>
+                                <select name="Model.MonthAtEmployer" id="MonthAtEmployer" data-val-required=" " data-val-range-min="1"
+                                    data-val-range-max="11" data-val-range=" " data-val-number="The field MonthAtEmployer must be a number."
+                                    data-val="true" class="select-titlealt input-validation-error">
+                                    <option value="0" selected="selected">mm</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>
+                                <select name="Model.YearAtEmployer" id="YearAtEmployer" class="select-titlealt input-validation-error">
+                                    <option value="12">yy</option>
+                                    <option value="0" selected="selected">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">10+</option>
+                                </select>
+                            </div>
+                            <div class="column last">
+                                <label for="field4" class="txt">
+                                    Salary Frequency</label>
+                                <select name="Model.SalaryFrequency" id="SalaryFrequency">
+                                    <option value="0" selected="selected">Please Select...</option>
+                                    <option value="BW">Bi Weekly</option>
+                                    <option value="FW">Four Weekly</option>
+                                    <option value="LFM">Last Friday of Month</option>
+                                    <option value="LMM">Last Monday of Month</option>
+                                    <option value="LTM">Last Tuesday of Month</option>
+                                    <option value="LWM">Last Wednesday of Month</option>
+                                    <option value="LTHM">Last Thursday of Month</option>
+                                    <option value="SD">Specific Date</option>
+                                    <option value="SDM">Specific Date of Month</option>
+                                    <option value="TM">Twice Monthly</option>
+                                    <option value="W">Weekly</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="column last">
+                                <label for="field4" class="txt">
+                                    Pay via DD</label>
+                                <select name="Model.PayByDD" id="PayByDD" class="valid">
+                                    <option value="True">Yes</option>
+                                    <option value="False">No</option>
+                                </select>
+                            </div>
+                            <div class="column">
+                                <label for="field10" class="txt">
+                                    Net Monthly Pay(£)</label>
+                                <input type="text" value="" name="Model.NetMonthlyPay" id="NetMonthlyPay" class="input">
+                                
+                            </div>
+                            <div class="column">
+                                <label for="field4" class="txt">
+                                    Next Payday</label>
+                                <input type="text" value="" name="Model.NextPayday" id="datepicker" class="input hasDatepicker">
+                            </div>
+                            <div class="column last">
+                                <label for="field4" class="txt">Following Payday</label>
+                                <input type="text" value="" name="NextNextPayday" id="following_datepicker" class="input hasDatepicker">
+                             
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="part-top">
+                    <!-- title-->
+                    <h3>
+                        <cufon class="cufon cufon-canvas" alt="Banking " style="width: 75px; height: 19px;"><canvas width="91" height="19" style="width: 91px; height: 19px; top: 0px; left: -1px;"></canvas><cufontext>Banking </cufontext></cufon>
+                        <cufon class="cufon cufon-canvas" alt="Details" style="width: 59px; height: 19px;"><canvas width="71" height="19" style="width: 71px; height: 19px; top: 0px; left: -1px;"></canvas><cufontext>Details</cufontext></cufon>
+                    </h3>
+                    <!-- list-->
+                    <ul class="bttm-list">
+                        <li class="middle-line">
+                            <div class="column">
+                                <label for="field4" class="txt">
+                                    Bank Name</label>
+                                <input type="text" value="" name="Model.BankName" id="BankName" class="input">
+                            </div>
+                            <div class="column">
+                                <label for="field4" class="txt">Bank Sort Code</label>
+                                <input type="text" value="" name="Model.BankSortCode" id="BankSortCode" class="input">
+                                <span data-valmsg-replace="true" data-valmsg-for="BankSortCode" class="field-validation-valid">
+                                </span>
+                            </div>
+                            <div class="column">
+                                <label for="field4" class="txt">
+                                    Bank Acc. No.</label>
+                                <input type="text" value="" name="Model.BankAccountNumber" id="BankAccountNumber" class="input">
+                             
+                            </div>
+                            <div class="column last">
+                                <label for="field4" class="txt">Debit Card Type</label>
+                                <select name="Model.DebitCardType" id="DebitCardType" class="valid">
+                                    <option value="0" selected="selected">Please Select...</option>
+                                    <option value="NDC">No Debit Card</option>
+                                    <option value="SM">Switch/Maestro</option>
+                                    <option value="SOLO">Solo</option>
+                                    <option value="VD">Visa/Delta</option>
+                                    <option value="VDEBIT">Visa/Debit</option>
+                                    <option value="VE">Visa/Electron</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="image" alt="image" src="../../Content/images/btn-select-form1.png" class="bul"
+                                id="submit-form">
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <div style="display: none" id="Loader">
+                <div>
+                    <img width="122" height="112" alt="image" src="../../Content/images/loading.gif"
+                        class="loaderImage">
+                    <p class="loaderText">
+                        <strong>Please wait.....
+                            <br>
+                        </strong>
+                        <br>
+                        Searching for lender...</p>
+                </div>
+            </div>
+            @{ Html.EndForm(); }
+        </div>
+    </div>
+</div>

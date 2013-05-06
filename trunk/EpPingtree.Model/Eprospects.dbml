@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EpPingtree" Class="EprospectsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=EpPingtree;Persist Security Info=True;User ID=sa" SettingsObjectName="EpPingtree.Model.Properties.Settings" SettingsPropertyName="EpPingtreeConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Billing" Member="Billings">
+    <Type Name="Billing">
+      <Column Name="BillingId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BillingTypeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SellerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BuyerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Association Name="BillingType_Billing" Member="BillingType" ThisKey="BillingTypeId" OtherKey="BillingTypeId" Type="BillingType" IsForeignKey="true" />
+      <Association Name="Buyer_Billing" Member="Buyer" ThisKey="BuyerId" OtherKey="BuyerId" Type="Buyer" IsForeignKey="true" />
+      <Association Name="Seller_Billing" Member="Seller" ThisKey="SellerId" OtherKey="SellerId" Type="Seller" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BillingType" Member="BillingTypes">
+    <Type Name="BillingType">
+      <Column Name="BillingTypeId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Association Name="BillingType_Billing" Member="Billings" ThisKey="BillingTypeId" OtherKey="BillingTypeId" Type="Billing" />
+      <Association Name="BillingType_LeadBought" Member="LeadBoughts" ThisKey="BillingTypeId" OtherKey="BillingTypeId" Type="LeadBought" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Buyer" Member="Buyers">
+    <Type Name="Buyer">
+      <Column Name="BuyerId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Alias" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Mobile" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="RefKey" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FixedAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="IntegrationUrl" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Buyer_Billing" Member="Billings" ThisKey="BuyerId" OtherKey="BuyerId" Type="Billing" />
+      <Association Name="Buyer_LeadBought" Member="LeadBoughts" ThisKey="BuyerId" OtherKey="BuyerId" Type="LeadBought" />
+      <Association Name="Buyer_LeadRejected" Member="LeadRejecteds" ThisKey="BuyerId" OtherKey="BuyerId" Type="LeadRejected" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LeadBought" Member="LeadBoughts">
+    <Type Name="LeadBought">
+      <Column Name="LeadBoughtId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LeadId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BuyerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="SmallMoney NOT NULL" CanBeNull="false" />
+      <Column Name="ExchangeRate" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="BuyerLeadReference" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="RedirectionLink" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="TimeBought" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="BillingValue" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="BillingTypeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="BillingType_LeadBought" Member="BillingType" ThisKey="BillingTypeId" OtherKey="BillingTypeId" Type="BillingType" IsForeignKey="true" />
+      <Association Name="Buyer_LeadBought" Member="Buyer" ThisKey="BuyerId" OtherKey="BuyerId" Type="Buyer" IsForeignKey="true" />
+      <Association Name="Lead_LeadBought" Member="Lead" ThisKey="LeadId" OtherKey="LeadId" Type="Lead" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LeadRejected" Member="LeadRejecteds">
+    <Type Name="LeadRejected">
+      <Column Name="LeadRejectedId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LeadId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Reason" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="BuyerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BuyerLeadReference" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TimeRejected" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Buyer_LeadRejected" Member="Buyer" ThisKey="BuyerId" OtherKey="BuyerId" Type="Buyer" IsForeignKey="true" />
+      <Association Name="Lead_LeadRejected" Member="Lead" ThisKey="LeadId" OtherKey="LeadId" Type="Lead" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Seller" Member="Sellers">
+    <Type Name="Seller">
+      <Column Name="SellerId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SellerName" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Seller_Billing" Member="Billings" ThisKey="SellerId" OtherKey="SellerId" Type="Billing" />
+      <Association Name="Seller_Lead" Member="Leads" ThisKey="SellerId" OtherKey="SellerId" Type="Lead" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Status" Member="Status">
+    <Type Name="Status">
+      <Column Name="StatusId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Status_Lead" Member="Leads" ThisKey="StatusId" OtherKey="StatusId" Type="Lead" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Lead" Member="Leads">
+    <Type Name="Lead">
+      <Column Name="LeadId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Forename" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Surname" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Dob" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="AddressLine1" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="AddressLine2" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Town" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="County" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Postcode" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="HomeStatus" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MonthsAtAddress" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EmployersName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MonthsAtEmployer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IncomeFrequency" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MonthlyIncome" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmploymentStatus" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DirectDeposit" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="BankAccountNumber" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="BankSortcode" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="HomePhone" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="WorkPhone" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="MobilePhone" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="ApplicationDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Source" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="SubSource" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="IpAddress" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SellerId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LoanAmount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DebitCardType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PaybackDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="StatusId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Lead_LeadBought" Member="LeadBoughts" ThisKey="LeadId" OtherKey="LeadId" Type="LeadBought" />
+      <Association Name="Lead_LeadRejected" Member="LeadRejecteds" ThisKey="LeadId" OtherKey="LeadId" Type="LeadRejected" />
+      <Association Name="Seller_Lead" Member="Seller" ThisKey="SellerId" OtherKey="SellerId" Type="Seller" IsForeignKey="true" />
+      <Association Name="Status_Lead" Member="Status" ThisKey="StatusId" OtherKey="StatusId" Type="Status" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

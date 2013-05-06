@@ -1,0 +1,120 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="E9B945DD-718F-4CFE-A02B-41711F566EA9/f:Service.asmx" caret="0" fromTop="0" />
+      <File id="E9B945DD-718F-4CFE-A02B-41711F566EA9/d:App_Code/f:Service.cs" caret="470" fromTop="14" />
+      <File id="F53E3C5E-9665-4D91-8E63-7C18FA9B1D97/f:ServiceModule.cs" caret="3278" fromTop="23" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqBuilder.cs" caret="1755" fromTop="20" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqContainer.cs" caret="2153" fromTop="21" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:BaseTest.cs" caret="1055" fromTop="21" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:BaseTestWithTestClass.cs" caret="703" fromTop="8" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/d:UnitTests/f:ApplyLeadServiceTest.cs" caret="821" fromTop="20" />
+      <File id="E4E757AD-D32E-476E-BE71-DA511DFDB3E7/d:Interfaces/f:IBuyerRepository.cs" caret="182" fromTop="8" />
+      <File id="E4E757AD-D32E-476E-BE71-DA511DFDB3E7/d:Repository/f:BuyerRepository.cs" caret="149" fromTop="7" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqContainer.cs" caret="966" fromTop="24" />
+      <File id="F53E3C5E-9665-4D91-8E63-7C18FA9B1D97/f:ServiceModule.cs" caret="596" fromTop="17" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqContainer.cs" caret="624" fromTop="16" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqContainer.cs" caret="3921" fromTop="20" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqContainer.cs" caret="6843" fromTop="29" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqContainer.cs" caret="7183" fromTop="18" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqContainer.cs" caret="5740" fromTop="92" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqBuilder.cs" caret="229" fromTop="9" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqBuilder.cs" caret="2553" fromTop="27" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:BaseTest.cs" caret="1698" fromTop="9" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqContainer.cs" caret="3917" fromTop="29" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqContainer.cs" caret="2847" fromTop="1" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqContainer.cs" caret="3205" fromTop="11" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:BaseTest.cs" caret="1699" fromTop="14" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqBuilder.cs" caret="1755" fromTop="15" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqBuilder.cs" caret="1755" fromTop="20" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqContainer.cs" caret="1929" fromTop="16" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:MoqContainer.cs" caret="2153" fromTop="21" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:BaseTest.cs" caret="1064" fromTop="21" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:BaseTestWithTestClass.cs" caret="369" fromTop="7" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:BaseTestWithTestClass.cs" caret="1341" fromTop="29" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:BaseTestWithTestClass.cs" caret="1319" fromTop="27" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:BaseTestWithTestClass.cs" caret="1042" fromTop="19" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:BaseTestWithTestClass.cs" caret="776" fromTop="24" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/f:BaseTestWithTestClass.cs" caret="712" fromTop="8" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/d:UnitTests/f:ApplyLeadServiceTest.cs" caret="683" fromTop="15" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/d:UnitTests/f:ApplyLeadServiceTest.cs" caret="481" fromTop="14" />
+      <File id="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7/d:UnitTests/f:ApplyLeadServiceTest.cs" caret="830" fromTop="20" />
+      <File id="E4E757AD-D32E-476E-BE71-DA511DFDB3E7/d:Interfaces/f:IBuyerRepository.cs" caret="191" fromTop="8" />
+      <File id="E4E757AD-D32E-476E-BE71-DA511DFDB3E7/d:Repository/f:BuyerRepository.cs" caret="149" fromTop="7" />
+    </RecentEdits>
+  </RecentFiles>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="IDisposable`0" priority="63" />
+      <Item value="private" priority="159" />
+      <Item value="bool" priority="63" />
+      <Item value="readonly" priority="31" />
+      <Item value="Type`0" priority="127" />
+      <Item value="_type" priority="32" />
+      <Item value="Dictionary" priority="58" />
+      <Item value="null" priority="63" />
+      <Item value="public" priority="127" />
+      <Item value="MoqContainer`0" priority="63" />
+      <Item value="this" priority="31" />
+      <Item value="false" priority="31" />
+      <Item value="_autoMock" priority="63" />
+      <Item value="autoMock" priority="31" />
+      <Item value="_typeTesting" priority="63" />
+      <Item value="typeTesting" priority="31" />
+      <Item value="AppDomainInitializer`0" priority="31" />
+      <Item value="void" priority="95" />
+      <Item value="var" priority="31" />
+      <Item value="new" priority="127" />
+      <Item value="builder" priority="63" />
+      <Item value="_injectedObjects" priority="31" />
+      <Item value="Dictionary&lt;Type,object&gt;" priority="57" />
+      <Item value="_neverMockedTypes" priority="63" />
+      <Item value="if" priority="31" />
+      <Item value="foreach" priority="31" />
+      <Item value="componentRegistration" priority="64" />
+      <Item value="EprospectsDataContext`0" priority="31" />
+      <Item value="BaseTestWithTestClass" priority="31" />
+      <Item value="MockContainer" priority="31" />
+      <Item value="MockContainer&lt;IBuyerRepository&gt;" priority="28" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@EpPingtree.Services.ServiceModule">
+      <Item value="AddInjectionControlDependencies`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Autofac.ContainerBuilder">
+      <Item value="Build`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="Add`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Autofac.IContainer">
+      <Item value="ComponentRegistry" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Autofac.Core.IComponentRegistry">
+      <Item value="Registrations" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Autofac.Core.IComponentRegistration">
+      <Item value="Activating" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>

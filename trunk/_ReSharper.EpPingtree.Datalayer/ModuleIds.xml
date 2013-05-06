@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="E4E757AD-D32E-476E-BE71-DA511DFDB3E7" ModuleId="EpPingtree.Datalayer" />
+  <Module PersistentId="89687C68-DFCE-4EAA-AA82-592DFA2DA323" ModuleId="EpPingtree.Model" />
+  <Module PersistentId="F53E3C5E-9665-4D91-8E63-7C18FA9B1D97" ModuleId="EpPingtree.Services" />
+  <Module PersistentId="82442B44-FE91-41EE-AAC4-4E08DCD2EAC7" ModuleId="EpPingtree.Tests" />
+  <Module PersistentId="E9B945DD-718F-4CFE-A02B-41711F566EA9" ModuleId="EpPingtree" />
+</Modules>

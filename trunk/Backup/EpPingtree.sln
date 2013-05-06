@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpPingtree.Datalayer", "EpPingtree.Datalayer\EpPingtree.Datalayer.csproj", "{E4E757AD-D32E-476E-BE71-DA511DFDB3E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpPingtree.Model", "EpPingtree.Model\EpPingtree.Model.csproj", "{89687C68-DFCE-4EAA-AA82-592DFA2DA323}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpPingtree.Service", "EpPingtree.Services\EpPingtree.Service.csproj", "{F53E3C5E-9665-4D91-8E63-7C18FA9B1D97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpPingtree.Tests", "EpPingtree.Tests\EpPingtree.Tests.csproj", "{82442B44-FE91-41EE-AAC4-4E08DCD2EAC7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E9B945DD-718F-4CFE-A02B-41711F566EA9} = {E9B945DD-718F-4CFE-A02B-41711F566EA9}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "EpPingtree.WebService", "EpPingtree.WebService\", "{E9B945DD-718F-4CFE-A02B-41711F566EA9}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{F53E3C5E-9665-4D91-8E63-7C18FA9B1D97}|EpPingtree.Services.dll;{E4E757AD-D32E-476E-BE71-DA511DFDB3E7}|EpPingtree.Datalayer.dll;{89687C68-DFCE-4EAA-AA82-592DFA2DA323}|EpPingtree.Model.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/EpPingtree.WebService"
+		Debug.AspNetCompiler.PhysicalPath = "EpPingtree.WebService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\EpPingtree.WebService\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/EpPingtree.WebService"
+		Release.AspNetCompiler.PhysicalPath = "EpPingtree.WebService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\EpPingtree.WebService\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "12116"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpPingtree.Web", "EpPingtree.Web\EpPingtree.Web.csproj", "{B3A26DB4-CB90-4F4C-B9F1-FF3C9861AAE7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E9B945DD-718F-4CFE-A02B-41711F566EA9} = {E9B945DD-718F-4CFE-A02B-41711F566EA9}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4E757AD-D32E-476E-BE71-DA511DFDB3E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E757AD-D32E-476E-BE71-DA511DFDB3E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E757AD-D32E-476E-BE71-DA511DFDB3E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E757AD-D32E-476E-BE71-DA511DFDB3E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89687C68-DFCE-4EAA-AA82-592DFA2DA323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89687C68-DFCE-4EAA-AA82-592DFA2DA323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89687C68-DFCE-4EAA-AA82-592DFA2DA323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89687C68-DFCE-4EAA-AA82-592DFA2DA323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F53E3C5E-9665-4D91-8E63-7C18FA9B1D97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F53E3C5E-9665-4D91-8E63-7C18FA9B1D97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F53E3C5E-9665-4D91-8E63-7C18FA9B1D97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F53E3C5E-9665-4D91-8E63-7C18FA9B1D97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82442B44-FE91-41EE-AAC4-4E08DCD2EAC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82442B44-FE91-41EE-AAC4-4E08DCD2EAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82442B44-FE91-41EE-AAC4-4E08DCD2EAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82442B44-FE91-41EE-AAC4-4E08DCD2EAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9B945DD-718F-4CFE-A02B-41711F566EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B945DD-718F-4CFE-A02B-41711F566EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B945DD-718F-4CFE-A02B-41711F566EA9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B945DD-718F-4CFE-A02B-41711F566EA9}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B3A26DB4-CB90-4F4C-B9F1-FF3C9861AAE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A26DB4-CB90-4F4C-B9F1-FF3C9861AAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A26DB4-CB90-4F4C-B9F1-FF3C9861AAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A26DB4-CB90-4F4C-B9F1-FF3C9861AAE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

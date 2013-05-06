@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><applications xmlns="http://tempuri.org/FAKEApplicationv1.xsd"><application><brokerCode>xpto</brokerCode><PUBID></PUBID><AID></AID><PID></PID><title>Mr</title><firstName>Joe</firstName>
+    <middleName></middleName>
+    <surname>Blogs</surname>
+    <houseName>12</houseName>
+    <address>Bellefields road flat 2</address>
+    <city>London</city>
+    <county>London</county>
+    <postcode>NW1 0SU</postcode>
+    <dateOfBirth>1977-01-30T00:00:00</dateOfBirth>
+    <phone1>02766676767</phone1>
+    <phone3>07533383678</phone3>
+    <email>applicant@gmail.com</email>
+    <employmentType></employmentType>
+    <employerName>Sony</employerName>
+    <phone2>02020292929292</phone2>
+    <timeAtEmployer>11</timeAtEmployer>
+    <netMonthlyPay>1000</netMonthlyPay>
+    <payFrequency></payFrequency>
+    <payDate>31</payDate>
+    <directDeposit>0</directDeposit>
+    <cardType></cardType>
+    <loanAmount>250</loanAmount>
+    <accountNumber>0978897</accountNumber>
+    <sortCode>234423</sortCode>
+    <ipAddress>10.123.123.2222</ipAddress>
+    <UserAgent></UserAgent>
+    <consent>1</consent>
+  </application>
+</applications>
